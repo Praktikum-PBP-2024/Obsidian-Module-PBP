@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"395960b46cd2fa24","type":"group","x":-1000,"y":-1480,"width":2080,"height":640,"color":"3","label":"Hypervisor"},
+		{"id":"6d37214fd631cfee","type":"file","file":"Canvas Item/Proxy.md","subpath":"#^8b7eb7","x":-1000,"y":-640,"width":2080,"height":187,"color":"3"},
+		{"id":"5648be02e9730903","type":"file","file":"Canvas Item/VM - CICD.md","x":560,"y":-1360,"width":444,"height":400,"color":"4"},
+		{"id":"5645e447cb1c2307","type":"file","file":"Canvas Item/VM Praktikan.md","subpath":"#^b306e4","x":-920,"y":-1360,"width":280,"height":400,"color":"5"},
+		{"id":"e95e7aa821401977","type":"file","file":"Canvas Item/VM Praktikan.md","subpath":"#^b306e4","x":-580,"y":-1360,"width":280,"height":400,"color":"5"},
+		{"id":"2772db48d16e5bf2","type":"text","text":"","x":-280,"y":-1360,"width":50,"height":400,"color":"5"},
+		{"id":"5c83bceef5a830d4","type":"text","text":"","x":-200,"y":-1360,"width":50,"height":400,"color":"5"},
+		{"id":"af3ec2e20fc1e48a","type":"text","text":"","x":-120,"y":-1360,"width":50,"height":400,"color":"5"},
+		{"id":"417f16a576166eb3","type":"file","file":"Canvas Item/VM Praktikan.md","subpath":"#^b306e4","x":-40,"y":-1360,"width":280,"height":400,"color":"5"},
+		{"id":"a4de7b706e54b8c1","type":"text","text":"","x":280,"y":-1360,"width":240,"height":400,"color":"4"},
+		{"id":"a0ac88bfa98b4a9c","type":"file","file":"Canvas Item/Github.md","x":480,"y":-280,"width":400,"height":400,"color":"#000000"},
+		{"id":"be54aa5074972dd7","type":"file","file":"Canvas Item/Kamu.md","x":-520,"y":-280,"width":400,"height":400,"color":"6"},
+		{"id":"a7c449470e5a6639","type":"text","text":"ssh: 24060xxx.shariyl.cloud:22xxx\nhttp: http://24060xxx.shariyl.cloud","x":-520,"y":-400,"width":400,"height":80,"color":"6"},
+		{"id":"a1a8c16508241e90","type":"text","text":"Github Action","x":555,"y":-400,"width":250,"height":60,"color":"#000000"}
+	],
+	"edges":[
+		{"id":"47a09b25da7bc3f4","fromNode":"be54aa5074972dd7","fromSide":"right","toNode":"a0ac88bfa98b4a9c","toSide":"left","label":"Kumpul Tugas"},
+		{"id":"a9ee1fa09b5e85ce","fromNode":"be54aa5074972dd7","fromSide":"top","toNode":"e95e7aa821401977","toSide":"bottom","color":"6"},
+		{"id":"8d1469f0a70370bc","fromNode":"be54aa5074972dd7","fromSide":"top","toNode":"5645e447cb1c2307","toSide":"bottom","color":"6"},
+		{"id":"b342338556b637ff","fromNode":"a0ac88bfa98b4a9c","fromSide":"top","toNode":"5648be02e9730903","toSide":"bottom"},
+		{"id":"00ee62469c989fce","fromNode":"be54aa5074972dd7","fromSide":"top","toNode":"2772db48d16e5bf2","toSide":"bottom","color":"6"},
+		{"id":"7be1464f50c2f18e","fromNode":"be54aa5074972dd7","fromSide":"top","toNode":"5c83bceef5a830d4","toSide":"bottom","color":"6"},
+		{"id":"d591a61e52eb408b","fromNode":"be54aa5074972dd7","fromSide":"top","toNode":"af3ec2e20fc1e48a","toSide":"bottom","color":"6"},
+		{"id":"1ebd06e2ecf795d9","fromNode":"be54aa5074972dd7","fromSide":"top","toNode":"417f16a576166eb3","toSide":"bottom","color":"6"}
+	]
+}

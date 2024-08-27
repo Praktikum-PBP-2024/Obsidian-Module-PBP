@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3d3cf2989a4d03c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "30bb6bc021d6115c",
             "type": "leaf",
             "state": {
@@ -44,43 +32,7 @@
             }
           },
           {
-            "id": "6b50d1fb61db09ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Praktikum 3 - PDF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abf792eb355410a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Praktikum 4 - PDF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ee74085005c7626",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Praktikum 1 - PDF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7530fc2a923696ae",
+            "id": "0e14f95e92a83d7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -219,15 +171,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aabbbb1fb6d507c3",
+  "active": "0e14f95e92a83d7b",
   "lastOpenFiles": [
-    "Praktikum 1 - PDF.md",
+    "Sistem.canvas",
+    "Welcome.md",
     "index.md",
+    "Attachments/Sistem.png",
+    "Attachments",
+    "New folder",
+    "Canvas Item/Proxy.md",
+    "Canvas Item/VM Praktikan.md",
+    "Praktikum 5 - PDF.md",
+    "Canvas Item/Kamu.md",
+    "Canvas Item/VM - CICD.md",
+    "Canvas Item/Untitled.md",
+    "Canvas Item/Hypervisor.md",
+    "Canvas Item/Github.md",
+    "Canvas Item",
+    "Praktikum 1 - PDF.md",
     "Praktikum 2 - PDF.md",
     "Praktikum 3 - PDF.md",
     "Praktikum 4 - PDF.md",
-    "Praktikum 5 - PDF.md",
-    "Welcome.md",
     "Praktikum 1"
   ]
 }

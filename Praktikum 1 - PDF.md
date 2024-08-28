@@ -6,6 +6,7 @@ Setelah mengikuti praktikum ini mahasiswa diharapkan dapat melakukan client-side
 Tools yang dibutuhkan untuk melakukan praktikum ini adalah web browser dan text editor(Notepad++).
 # 3. Langkah - Langkah Praktikum
 ## 3.1. JavaScript Basic
+
 Menuliskan teks `Hello world` ke layar menggunakan [`document.write`](https://developer.mozilla.org/en-US/docs/Web/API/Document/write) 
 
 `01_basic.html`
@@ -329,7 +330,7 @@ Mengakses elemen HTML menggunakakan fungsi [`getElementsByTagName(tag)`](https:/
 </html>
 ```
 
-Mengakses elemen HTML menggunakan fungsi getElementsByClassName(class).
+Mengakses elemen HTML menggunakan fungsi [`getElementsByClassName(class)`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName).
 
 `03_dom.html`
 ```html
@@ -360,7 +361,7 @@ Mengakses elemen HTML menggunakan fungsi getElementsByClassName(class).
 </htm1>
 ```
 
-Mengubah elemen HTML
+### 3.2.2. Mengubah elemen HTML
 
 `04_dom.html`
 ```html
@@ -423,9 +424,10 @@ Mengubah visibility elemen HTML menggunakan property style.visibility.
 </html>
 ```
 
-3.2.3. Menambah atau menghapus elemen HTMI.
-Menambah elemen HTML dengan method createElement() dan menghapus child dari sebuah
-element dengan method removeChild().
+### 3.2.3. Menambah atau menghapus elemen HTML
+
+Menambah elemen HTML dengan method [`createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) dan menghapus child dari sebuah
+element dengan method [`removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild).
 
 `06_dom.html`
 ```html
@@ -463,7 +465,7 @@ element dengan method removeChild().
 </htm1>
 ```
 
-3.2.4. Menambahkan event handler pada elemen HTML
+### 3.2.4. Menambahkan event handler pada elemen HTML
 
 `07_dom.html`
 ```html
@@ -485,7 +487,7 @@ element dengan method removeChild().
 </html>
 ```
 
-3.3. Form Validation
+## 3.3. Form Validation
 
 `01_form_validation.html`
 ```html
@@ -517,7 +519,7 @@ element dengan method removeChild().
 </html>
 ```
 
-Menggunakan method `checkValidity()` dan property `validationMessage`
+Menggunakan method [`checkValidity()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidity) dan property `validationMessage`
 
 `02_form_validation.html`
 ```html

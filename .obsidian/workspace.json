@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Praktikum 1 - PDF.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Praktikum 1 - PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Praktikum 1 - PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Praktikum 1 - PDF.md"
               }
             }
           }
@@ -173,9 +173,11 @@
   },
   "active": "0e14f95e92a83d7b",
   "lastOpenFiles": [
+    "Attachments/tugas1_rip.png",
+    "Praktikum 1 - PDF.md",
+    "index.md",
     "Sistem.canvas",
     "Welcome.md",
-    "index.md",
     "Attachments/Sistem.png",
     "Attachments",
     "New folder",
@@ -188,7 +190,6 @@
     "Canvas Item/Hypervisor.md",
     "Canvas Item/Github.md",
     "Canvas Item",
-    "Praktikum 1 - PDF.md",
     "Praktikum 2 - PDF.md",
     "Praktikum 3 - PDF.md",
     "Praktikum 4 - PDF.md",

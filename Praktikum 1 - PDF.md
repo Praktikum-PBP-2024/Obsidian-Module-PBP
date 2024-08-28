@@ -18,7 +18,7 @@ Menuliskan teks `Hello world` ke layar menggunakan [`document.write`](https://de
 <body>
 	<h1>Javascript</h1>
 	<script>
-	document.write ("Hello world!!!");
+	document.write("Hello world!!!");
 	</script>
 </body>
 </html>
@@ -53,7 +53,7 @@ Contoh penulisan kode JavaScript secara eksternal:
 `myscript.js`
 ```js
 function myFunction() {
-	document.getElementById ("paragraf").innerHTML = "Hypertext Markup Language"
+	document.getElementById("paragraf").innerHTML = "Hypertext Markup Language"
 }
 ```
 
@@ -63,7 +63,7 @@ function myFunction() {
 <html>
 <head>
 	<title>Belajar Javascript</title>
-	<script src-"js/myscript.js"></script>
+	<script src="js/myscript.js"></script>
 </head>
 <body>
 	<p id="paragraf">HTML</p>
@@ -85,7 +85,7 @@ Kondisional: statement `if-else`
 	<h1>Javascript</h1>
 	<script>
 	var page = "Home";
-	if(page == "Home") 
+	if(page == "Home")  {
 		document.write("You selected Home");
 	} else if(page == "About") {
 		document.write("You selected About") ;
@@ -160,13 +160,13 @@ Perulangan: statement `do-while`
 	<title>Belajar Javascript</title>
 </head>
 <body>
-	<h1>Looping: while</h1>
+	<h1>Looping: do-while</h1>
 	<script>
 	counter = 0;
-	while (counter < 5) {
+    do {
 		document.write("Counter: " + counter + "<br />");
 		counter++;
-	}
+	} while (counter < 5) 
 	</script>
 </body>
 </html>
@@ -185,7 +185,7 @@ Perulangan: statement `for`
 	<h1>Looping: for</h1>
 	<script>
 	for (var counter=1; counter < 5; counter++){
-		document.write ("Counter: " + counter + "<br />");
+		document.write("Counter: " + counter + "<br />");
 	}
 	</script>
 	</body>
@@ -214,11 +214,11 @@ Array numerik
 	
 	//looping numeric array
 	for(var i = 0; i < myArray2.length; i++){
-		document.write("Array " + i " :"+myArray2[i]+"<br />");
+		document.write("Array " + i + ": " + myArray2[i] + "<br />");
 	}
 	</script>
 </body>
-</htm1>
+</html>
 ```
 
 Array asosiatif
@@ -242,11 +242,11 @@ Array asosiatif
 	
 	//looping numeric array
 	for(x in myArray3) {
-		document.write("Array " + x + ":" + myArray3[X] + "<br />");
+		document.write("Array " + x + ": " + myArray3[x] + "<br />");
 	}
 	</script>
 	</body>
-</htm1>
+</html>
 ```
 
 Fungsi
@@ -266,11 +266,11 @@ Fungsi
 	myArray[1] = 10;
 	myArray[2] = 15;
 	
-	document.write("Jumlah seluruh elemen array adalah " sumarray(my(myArray));
+	document.write("Jumlah seluruh elemen array adalah " + sumArray(myArray));
 	
-	function sumArray(x)(
+	function sumArray(x){
 		var sum = 0;
-		for (i=0 ; length;i++){
+		for (var i = 0; i < x.length; i++){
 			sum = sum + x[i];
 		}
 		return sum;
@@ -322,7 +322,8 @@ Mengakses elemen HTML menggunakakan fungsi [`getElementsByTagName(tag)`](https:/
 	<script>
 	var x = document.getElementsByTagName("p");
 	
-	document.getElementById("demo").innerHTML = "Isi teks[0] : " + x[0].innerHTML + "<br />" + "Isi teks[1]: " + x[1].innerHTML;
+	document.getElementById("demo").innerHTML = "Isi teks[0]: " + x[0].innerHTML + "<br />" 
+                                              + "Isi teks[1]: " + x[1].innerHTML;
 	</script>
 </body>
 </html>
@@ -332,6 +333,7 @@ Mengakses elemen HTML menggunakan fungsi getElementsByClassName(class).
 
 `03_dom.html`
 ```html
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Belajar Javascript</title>
@@ -345,7 +347,7 @@ Mengakses elemen HTML menggunakan fungsi getElementsByClassName(class).
 	<p id="demoSelector"></p>
 	
 	<script>
-	var x = document.getElementByClassName("content");
+	var x = document.getElementsByClassName("content");
 	
 	document.getElementById("demoClass").innerHTML = "Isi teks[0]: " + x[0].innerHTML + "<br />" + 
 	                                                 "Isi teks[1]: " + x[1].innerHTML;
@@ -367,29 +369,29 @@ Mengubah elemen HTML
 <head>
 	<title>Belajar Javascript</title>
 	<script>
-	function myFunction01() {
+	function ubahTextJudul() {
 		document.getElementsByTagName("h2")[0].innerHTML = "Document Object Model";
 	}
-	function myFunction02() {
+	function ubahGambar() {
 		document.getElementById("logo").src = "images/html_logo.png";
 	}
-	function myFunction03() {
-		document.getElementsByTagName("h2")[0].setAttribute("class","judul");
-		document.getElementById("logo").setAttribute ("width",200);
-		document.getElementById("logo").setAttribute("height",200);
+	function ubahAttribut() {
+		document.getElementsByTagName("h2")[0].setAttribute("class", "judul");
+		document.getElementById("logo").setAttribute("width",  300);
+		document.getElementById("logo").setAttribute("height", 300);
 	}
-	function myFunction04() {
-		document.getElementByClassName("judul")[0].style.color = "red";
+	function ubahElemenJudulMenjadiMerah() {
+		document.getElementsByClassName("judul")[0].style.color = "red";
 	}
 	</script>
 </head>
 <body>
 	<h2>Hypertext Markup Language</h2>
 	<img id="logo" src="images/picture.jpg" alt="gambar">
-	<button id="bta01" type="button" onclick="myFunction01()">Ubah inner HTML</button>
-	<button id="btn02" type="button" onclick="myFunction02()">Ubah nilai atribut image</button>
-	<button id="btn03" type="button" onclick="myFunction03()">Set nilai atribut baru</button>
-	<button id="btn01" type="button" onclick="myFunction04()">Ubah style elemen</button>
+	<button id="bta01" type="button" onclick="ubahTextJudul()">Ubah inner HTML</button>
+	<button id="btn02" type="button" onclick="ubahGambar()">Ubah nilai atribut image</button>
+	<button id="btn03" type="button" onclick="ubahAttribut()">Set nilai atribut baru</button>
+	<button id="btn04" type="button" onclick="ubahElemenJudulMenjadiMerah()">Ubah style elemen</button>
 </body>
 </html>
 ```
@@ -434,25 +436,25 @@ element dengan method removeChild().
 </head>
 <body>
 	<p>Klik button "Create New Element" untuk membuat elemen BUTTON baru</p>
-	<button onclick="myFunction01()">Create New Element</button>
+	<button onclick="createNewElement()">Create New Element</button>
 	
 	<ul id="myList">
-		<li>HTML</1i>
+		<li>HTML</li>
 		<li>CSS</li>
 		<li>Javascript</li>
-	</u1>
+	</ul>
 	
 	<p>Klik button "Remove Child Element" untuk menghapus child element list</p>
-	<button onclick="myFunction02 ()">Remove Child Element</button>
+	<button onclick="removeChildElement()">Remove Child Element</button>
 	
 	<script>
-	function myFunction01() {
+	function createNewElement() {
 		var btn = document.createElement("BUTTON");
 		var t = document.createTextNode("CLICK ME");
-		btn.appendchild(t);
-		document.body.appendchild(btn);
+		btn.appendChild(t);
+		document.body.appendChild(btn);
 	}
-	function myFunction02() {
+	function removeChildElement() {
 		var list = document.getElementById("myList");
 		list.removeChild(list.childNodes[1]);
 	}
@@ -476,7 +478,7 @@ element dengan method removeChild().
 	<p id="demo"></p>
 	<script>
 	document.getElementById("btn01").onclick = function(){
-		document.getElementById("demo").innerHTML= = "Sukses";
+		document.getElementById("demo").innerHTML = "Sukses";
 	}
 	</script>
 </body>
@@ -491,7 +493,7 @@ element dengan method removeChild().
 <html>
 <head>
 	<title>Form Login</title>
-<script>
+    <script>
 	function validateForm() {
 		var x = document.forms["formLogin"]["fusername"].value;
 		var y = document.forms["formLogin"]["fpassword"].value;
@@ -500,15 +502,17 @@ element dengan method removeChild().
 			return false;
 		}
 	}
-</script>
+    </script>
 </head>
 <body>
 	<h2>Login</h2>
-	<form name="formLogin" action="process.php" onsubmit="return validateForm()" method="post">
-	Name: <input type="text" name="fusername" /> <br />
-	Password: <input type="password" name="fpassword" />
-	<input type="submit" value="Submit">
-	</form>
+    <form name="formLogin" action="process.php" method="post">
+        Name: <input type="email" name="fusername" required="required" maxlength="30"/>
+        <span id="errUsername"></span><br />
+        Password: <input type="password" name="fpassword" required="required" maxlength="30" />
+        <span id="errPassword"></span><br />
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
 </body>
 </html>
 ```
@@ -520,33 +524,54 @@ Menggunakan method `checkValidity()` dan property `validationMessage`
 <!DOCTYPE htm1>
 <html>
 <head>
-<title>Form Login</title>
-<script>
-function validateForm() (
-var x = document.forms【"formLogin"]["fusername"];
-var y = document.forms【"formLogin"]["fpassword"];
-if (x.checkValidity() == false II y.checkValidity() = false) (
-document.getElementById("errUsername").innerHTML = x.validationMessage;
-document.getElementById("errPassword").innerHTML = y.validationMessage;
-return false;
-</script>
+    <title>Form Login</title>
+    <script>
+    function validateForm() {
+        var x = document.forms["formLogin"]["fusername"];
+        var y = document.forms["formLogin"]["fpassword"];
+        if (x.checkValidity() == false || y.checkValidity() == false) {
+            document.getElementById("errUsername").innerHTML = x.validationMessage;
+            document.getElementById("errPassword").innerHTML = y.validationMessage;
+            return false;
+        }
+    }
+    </script>
 </head>
 <body>
-<h2>Login</h2>
-<form name-"formLogin" action-"process.php" method="post">
-Name: <input type-"email" name-"fusername" required-"required" maxlength="30"30" />> >>>>>
-<span id="errUsername"></span><br />
-Password: <input type="password" namame="fpassword" required="required" maxlength="30"30" />/>    > >>
-<span id="errPassword"></span><br />
-<input type-"button" value="Submit" onclick="validateForm()">
-</form>
+    <h2>Login</h2>
+    <form name="formLogin" action="process.php" method="post">
+        Name: <input type="email" name="fusername" required="required" maxlength="30"/>
+        <span id="errUsername"></span><br />
+        Password: <input type="password" name="fpassword" required="required" maxlength="30" />
+        <span id="errPassword"></span><br />
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
 </body>
 ```
 
+# Tugas
 
+Buatlah form input tambah produk seperti gambar berikut:
+
+![[tugas1_rip.png]]
+Aturan validasi untuk form tersebut adalah sebagai berikut:
+
+| Field            | Aturan validasi                                                                                                                                                                                                                                                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nama produk      | Harus diisi, minimal **5** karakter, maksimal **30** karakter                                                                                                                                                                                                                                                                                       |
+| Deskripsi produk | Harus diisi, minimal **5** karakter, maksimal **100** karakter                                                                                                                                                                                                                                                                                      |
+| Kategori         | Harus diisi<br>Pilihan: <br>- Baju<br>- Elektronik <br>- Alat Tulis                                                                                                                                                                                                                                                                                 |
+| Sub Kategori     | Harus diisi, pilihan sesuai dengan kategori yang dipilih.<br>Jika kategori = **Baju**, pilihan sub kategori: <br>- Baju Pria<br>- Baju Wanita<br>- Baju Anak<br>Jika kategori = **Elektronik**, pilihan sub kategori:<br>- Mesin Cuci<br>- Kulkas<br>- AC<br>Jika kategori = **Alat Tulis**, pilihan sub kategori:<br>- Kertas<br>- Map<br>- Pulpen |
+| Harga satuan     | Harus diisi, berupa nilai numerik                                                                                                                                                                                                                                                                                                                   |
+| Grosir           | **Jika Ya, maka harga grosir harus diisi, jika tidak harga grosir dikosongkan**                                                                                                                                                                                                                                                                     |
+| Harga grosir     | Harus diisi jika pilihan Grosir adalah Ya, berupa nilai numerik                                                                                                                                                                                                                                                                                     |
+| Jasa kirim       | **Minimal jasa kirim yang dipilih adalah 3**                                                                                                                                                                                                                                                                                                        |
+| Captcha          | Berisi huruf dari A-Z atau a-z sepanjang 5 karakter, di-generate secara random saat halaman di-load.<br><br>**Hint**: Mahasiswa dapat menggunakan fungsi [`String.fromCharCode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode) untuk mengubah angka kode ASCII ke<br>karakter ASCII         |
+
+Simpan file tersebut dengan nama `js_validation_nim.html`
 
 # TODO
 - [x] Content
-- [ ] Second pass
-- [ ] Proof read
+- [x] Second pass
+- [x] Proof read
 - [ ] Appendix

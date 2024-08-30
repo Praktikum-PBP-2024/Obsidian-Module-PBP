@@ -358,7 +358,7 @@ Mengakses elemen HTML menggunakan fungsi [`getElementsByClassName(class)`](https
 	                                                    "Isi teks[1]: " + y[1].innerHTML;
 	</script>
 </body>
-</htm1>
+</html>
 ```
 
 ### 3.2.2. Mengubah elemen HTML
@@ -407,7 +407,7 @@ Mengubah visibility elemen HTML menggunakan property style.visibility.
 	<title>Belajar Javascript</title>
 	<script>
 	function hideImage() {
-		document.getElementById ("ingLogo").style.visibility = "hidden";
+		document.getElementById("imgLogo").style.visibility = "hidden";
 	}
 	function showimage() {
 		document.getElementById("imgLogo").style.visibility = "visible";
@@ -416,7 +416,7 @@ Mengubah visibility elemen HTML menggunakan property style.visibility.
 </head>
 <body>
 	<h2>Hypertext Markup Language</h2>
-	<ing id="inglogo" src="images/htal logo.pog" alt="gambar" style="width:200px;height:200px;border=0;">
+	<img id="imglogo" src="images/htal logo.pog" alt="gambar" style="width:200px;height:200px;border=0;">
 	<br />
 	<button id="btn01" type="button" onclick="hideImage()">Hide Image</button>
 	<button id="btn02" type="button" onclick="showimage()">Show Image</button>
@@ -462,7 +462,7 @@ element dengan method [`removeChild()`](https://developer.mozilla.org/en-US/docs
 	}
 	</script>
 </body>
-</htm1>
+</html>
 ```
 
 ### 3.2.4. Menambahkan event handler pada elemen HTML
@@ -549,6 +549,7 @@ Menggunakan method [`checkValidity()`](https://developer.mozilla.org/en-US/docs/
         <input type="button" value="Submit" onclick="validateForm()">
     </form>
 </body>
+</html>
 ```
 
 # Tugas

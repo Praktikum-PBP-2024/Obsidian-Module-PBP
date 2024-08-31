@@ -1,26 +1,28 @@
 # PEMROSESAN FORM
 
-1. Tujuan Praktikum
-Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:
-a. Membaca isi form dengan PHP menggunakan method GET maupun POST
-b. Melakukan validasi input data dengan PHP
-c. Menampilkan isi kembali form
-2. Tools
-Tools yang dibutuhkan untuk melakukan praktikum ini adalah Apache web server, PHP, MySQL dan
-text editor.
-3. Langkah-Langkah Praktikum
-3.1. Praktikum 2 : Membaca isi form dengan PHP menggunakan method GET
-1. Buatlah form input data mahasiswa seperti berikut menggunakan kode HTML dengan ketentuan
-berikut:
- Gunakan submission method GET.
- Pemrosesan form dilakukan pada halaman yang sama, sehingga atribut action pada elemen
-`<form>` dikosongkan.
- Berikan nama pada setiap elemen input yang digunakan pada atribut name.
- Elemen input yang masukannya berupa single value diberi nama berupa teks biasa,
-sedangkan yang masukannya dapat berupa multiple values diberi nama sebagai array.
+# 1. Tujuan Praktikum
 
-Berikut adalah potongan source code yang digunakan untuk membuat form seperti gambar di atas.
-user_form_get.php
+Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:
+1. Membaca isi form dengan PHP menggunakan method GET maupun POST
+2. Melakukan validasi input data dengan PHP
+3. Menampilkan isi kembali form
+# 2. Tools
+
+Tools yang dibutuhkan untuk melakukan praktikum ini adalah Apache web server, PHP, MySQL dan text editor.
+# 3. Langkah-Langkah Praktikum
+
+## 3.1. Membaca isi form dengan PHP menggunakan method GET
+
+1. Buatlah form input data mahasiswa seperti berikut menggunakan kode HTML dengan ketentuan berikut:
+
+-  Gunakan submission method GET.
+- Pemrosesan form dilakukan pada halaman yang sama, sehingga atribut action pada elemen `<form>` dikosongkan.
+- Berikan nama pada setiap elemen input yang digunakan pada atribut name.
+- Elemen input yang masukannya berupa single value diberi nama berupa teks biasa, sedangkan yang masukannya dapat berupa multiple values diberi nama sebagai array.
+
+Berikut adalah potongan source code yang digunakan untuk membuat form seperti gambar di atas. 
+
+`user_form_get.php`
 
 ```php
 <div class="form-group">
@@ -80,9 +82,7 @@ Design
 ```
 
 
-2. Tambahkan kode PHP seperti berikut setelah kode untuk membuat form yang bertujuan untuk
-membaca dan menampilkan isian yang dimasukkan ke form tersebut. Karena menggunanakan
-method GET, maka isi form diakses melalui array $_GET.
+2. Tambahkan kode PHP seperti berikut setelah kode untuk membuat form yang bertujuan untuk membaca dan menampilkan isian yang dimasukkan ke form tersebut. Karena menggunanakan method GET, maka isi form diakses melalui array `$_GET`.
 
 ```php
 <?php
@@ -100,18 +100,20 @@ foreach($minat as Sminat_item) (
 echo o '<br />'.$minat_item;
 ```
 
-3. Buatlah sebuah folder bernama form di folder htdocs, lalu simpan file tersebut di folder form
-dengan nama user_form_get.php.
+3. Buatlah sebuah folder bernama form di folder htdocs, lalu simpan file tersebut di folder form dengan nama `user_form_get.php`.
 4. Jalankan file tersebut di web browser, perhatikan alamat url setelah form diisi dan di-submit.
-5. Perhatikan pada field hobby, mengapa penamaan dan pengaksesannya berbeda dengan field
-lainnya?
+5. Perhatikan pada field hobby, mengapa penamaan dan pengaksesannya berbeda dengan field lainnya?
 
-3.2. Praktikum 2 : Membaca isi form dengan PHP menggunakan method POST
-1. Ubah file user_form_get.php, ganti nilai atribut method pada elemen `<form>` dengan POST.
+## 3.2. Membaca isi form dengan PHP menggunakan method POST
+
+1. Ubah file `user_form_get.php`, ganti nilai atribut method pada elemen `<form>` dengan POST.
+
 ```php
 <form method="POST" autocomplete="on" action="">
 ```
-2. Lalu, ubahlah kode PHP yang digunakan untuk membaca isi form dari $\_GET menjadi $\_POST seperti berikut:
+
+2. Lalu, ubahlah kode PHP yang digunakan untuk membaca isi form dari `$_GET` menjadi `$_POST` seperti berikut:
+
 ```php
 <?php
 if (isset($_POST["submit"])))(
@@ -127,18 +129,16 @@ foreach(Sminat as Sminat item) (
 echo '<br />'.sminat_item;
 ```
 
-3. Simpan file tersebut dengan nama baru, yaitu user_form_post.php.
+3. Simpan file tersebut dengan nama baru, yaitu `user_form_post.php`.
 4. Jalankan file tersebut di web browser, perhatikan alamat url setelah form diisi dan di-submit.
-5. Apa perbedaan antara method GET pada file user_form_get.php dan method POST pada file user_form_post.php?
+5. Apa perbedaan antara method GET pada file `user_form_get.php` dan method POST pada file `user_form_post.php`?
 6. Manakah yang lebih baik, method GET atau POST? Uraikan jawaban Anda.
 
-3.3. Praktikum 3 : Validasi form dengan PHP
-Form pada file user_form_get.php maupun user_form_post.php belum ditambahkan penanganan
-validasi. Sebelumnya, tambahkan field alamat menggunakan elemen `<textarea>` setelah field email
-pada file user_form_post.php, sehingga tampilannya menjadi seperti berikut:
-
+## 3.3. Validasi form dengan PHP
+Form pada file user_form_get.php maupun user_form_post.php belum ditambahkan penanganan validasi. Sebelumnya, tambahkan field alamat menggunakan elemen `<textarea>` setelah field email pada file `user_form_post.php`, sehingga tampilannya menjadi seperti berikut:
 
 1. Tambahkan kode PHP berikut untuk menambahkan aturan validasi dan letakkan di bagian atas, sebelum kode untuk membuat form.
+
 ```php
 <body>
 <?php
@@ -194,31 +194,32 @@ function test input($data) {
 	<div class="error"><?php if(isset(Serror email)) echo serror email;?>></div>
 </div>
 ```
-3. Simpan file tersebut dengan nama baru user_form_post1.php.
+3. Simpan file tersebut dengan nama baru `user_form_post1.php`.
 4. Jalankan file tersebut di web browser, kosongkan sebagian field, lalu submit, perhatikan apakah pesan error sudah ditampilkan dengan benar? Perhatikan apakah field yang sudah terisi sebelumnya dapat ditampilkan kembali? Mengapa?
-5. Apakah peran fungsi test_input($data) pada proses validasi tersebut? Mengapa fungsi tersebut hanya dikenakan pada isian nama, email dan alamat, namun tidak dikenakan pada isian jenis kelamin, kota dan peminatan?
+5. Apakah peran fungsi `test_input($data)` pada proses validasi tersebut? Mengapa fungsi tersebut hanya dikenakan pada isian nama, email dan alamat, namun tidak dikenakan pada isian jenis kelamin, kota dan peminatan?
 6. Bagaimanakah aturan validasi yang digunakan untuk mengecek agar isian tidak boleh kosong?
 
-3.4. Praktikum 4 : Menampilkan kembali isi form
-Pada file form_customer2.php jika terjadi kesalahan maka isian form akan kembali kosong lagi. Untuk menampilkannya kembali tambahkan kode berikut pada setiap elemen input yang bersesuaian. Perhatikan bahwa cara yang digunakan berbeda untuk elemen input yang berbeda. 
+## 3.4. Menampilkan kembali isi form
+Pada file `form_customer2.php` jika terjadi kesalahan maka isian form akan kembali kosong lagi. Untuk menampilkannya kembali tambahkan kode berikut pada setiap elemen input yang bersesuaian. Perhatikan bahwa cara yang digunakan berbeda untuk elemen input yang berbeda. 
 
 Field nama (perhatikan kode yang diblok warna abu-abu):
 ```php
 <div class "form-group">
-<label for-"nama">Nama:<</label>
-<input type-*text" class="form-control" id="nama" name-"nama" maxlength-"50" value="
-<?php if(isset(Snama)) (echo Snama;) ?>">
-<div class="error"><?php if(isset(Serror nama)) echo Serror nama;?>></div>
+	<label for="nama">Nama:</label>
+	<input type="text" class="form-control" id="nama" name="nama" maxlength="50" value="<?php if(isset(Snama)) (echo Snama;) ?>">
+	<div class="error"> 
+		<?php if(isset($error_nama)) echo $error_nama; ?>
+	</div>
 </div>
 ```
 
 Field alamat:
 ```php
 <div class="form-group">
-<label for-"alamat">Alamat:</label>
-<textarea class="form-control" id="alamat" rows="3" name-"alamat">
-<?php if(isset(Salamat) (echo Salamat;) ?></textarea>
-<div class-"error"X?php if(isset (Serror alamat)) echo Serror alamat;??></div>
+	<label for-"alamat">Alamat:</label>
+	<textarea class="form-control" id="alamat" rows="3" name-"alamat">
+	<?php if(isset(Salamat) (echo Salamat;) ?></textarea>
+	<div class-"error"X?php if(isset (Serror alamat)) echo Serror alamat;?></div>
 </div>
 ```
 
@@ -230,6 +231,7 @@ Field kota:
 <option value="Jakarta" <?php if (isset(Skota) && $kota="Jakarta") echo
 "selected="true"'; ?>>Jakarta</option>
 ```
+
 Lengkapi untuk option yang lainnya.
 
 Field jenis kelamin:
@@ -238,12 +240,17 @@ Field jenis kelamin:
 <div class="form-check">
 <label class="form-check-label">
 <input type-"radio" class="form-check-input" name="jenis_kelamin" value="pria"
-<2php if (isset(Sjenis kelamin) 66 $jenis_kelamin-="pria") echo "checked"/2>>>>Pria
+	<?php 
+		if (isset($jenis_kelamin) && $jenis_kelamin=="pria") echo "checked"
+	?>
+	>Pria
 </label>
 ```
 
 Lengkapi untuk opsi radio button jenis kelamin yang lainnya.
+
 Field peminatan:
+
 ```php
 <div class="form-check">
 <label class="form-check-label">
@@ -256,24 +263,25 @@ pi untuk pilihan checkbox minat yang lainnya.
 
 Lengkapi untuk pilihan checkbox minat yang lainnya.
 
-Setelah semua selesai, simpan dengan nama user_form_post2.php. Jalankan pada browser dan amatai perbedaaanya dengan user_form_post1.php. Periksalah apakah isi form yang sebelumnya sudah ditampilkan dengan benar.
+Setelah semua selesai, simpan dengan nama `user_form_post2.php`. Jalankan pada browser dan amati perbedaaanya dengan `user_form_post1.php`. Periksalah apakah isi form yang  ebelumnya sudah ditampilkan dengan benar.
 
-Latihan:
+# 4. Tugas
+
 Selesaikanlah file 4 file yang langkah-langkahnya telah diuraikan pada bagian sebelumnya, yaitu:
-- user_form_get.php
-- user_form_post.php
-- user_form_post1.php
-- user_form_post2.php
+- `user_form_get.php`
+- `user_form_post.php`
+- `user_form_post1.php`
+- `user_form_post2.php`
+
 Simpan keempat file tersebut dalam folder form.
-4. Tugas
+
 Buatlah form seperti gambar berikut:
 
 Aturan validasi:
 
 - Semua field harus diisi. 
 - NIS terdiri atas 10 karakter dan hanya boleh berisi angka 0..9.
-- Jika siswa kelas X atau XI, maka program menampilkan pilihan ekstrakurikuler. Siswa
-wajib memilih kegiatan ekstrakurikuler yang diminati, minimal 1 maksimal 3. Jika kelas XII siswa tidak boleh mengikuti kegiatan ekstrakurikuler, sehingga program tidak perlu menampilkan kegiatan ekstrakurikuler.
+- Jika siswa kelas X atau XI, maka program menampilkan pilihan ekstrakurikuler. Siswa wajib memilih kegiatan ekstrakurikuler yang diminati, minimal 1 maksimal 3. Jika kelas XII siswa tidak boleh mengikuti kegiatan ekstrakurikuler, sehingga program tidak perlu menampilkan kegiatan ekstrakurikuler.
 
 
 # TODO

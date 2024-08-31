@@ -1,7 +1,8 @@
 # SINTAKS DASAR PHP
+
 # 1. Tujuan Praktikum
-Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami sintaks dasar PHP
-untuk:
+
+Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami sintaks dasar PHP untuk:
 1) Menampilkan teks PHP ke web browser.
 2) Menggunakan variabel dan konstanta di PHP.
 3) Membuat kode PHP untuk contoh kasus kondisional
@@ -10,12 +11,15 @@ untuk:
 6) Mendefinisikan array dengan PHP, mengakses elemen array melalui perulangan dan memahami beberapa fungsi sorting araay di PHP.
 
 # 2. Tools
+
 Tools yang dibutuhkan untuk melakukan praktikum ini adalah Apache web server dan PHP,
 text editor.
 
 # 3. Langkah-Langkah Praktikum
+
 ## 3.1. Praktikum 1 : Menampilkan teks PHP ke browser
-Bagian ini bertujuan untuk membuat program PHP yang pertama, yang akan menampilkan text ke web browser. Tulislah program di bawah ini pada editor text dan simpanlah dengan nama “welcome.php” di direktori `C:\xampp\htdoc\pwi1`.
+
+Bagian ini bertujuan untuk membuat program PHP yang pertama, yang akan menampilkan text ke web browser. Tulislah program di bawah ini pada editor text dan simpanlah dengan nama `welcome.php` di direktori `C:\xampp\htdoc\pwi1`.
 
 ```php
 <html>
@@ -32,6 +36,7 @@ Bagian ini bertujuan untuk membuat program PHP yang pertama, yang akan menampilk
 ```
 
 ## 3.2. Praktikum 2: Variabel dan konstanta
+
 Bagian ini bertujuan untuk mempelajari penggunaan variabel dan menampilkan nilai variabel, serta membedakan lingkup variabel, yaitu lokal, statik, global dan super global.
 
 ```php
@@ -43,7 +48,8 @@ $a = 'Pemrograman Web dan Internet';
 echo 'Variabel a berisi : '.$a.'<br />';
 ```
 
-Variabel lokal
+#### Variabel lokal
+
 ```php
 // Define a function
 function diskon(){
@@ -57,7 +63,9 @@ echo 'harga = '.$harga.'<br />';
 ```
 
 Berapakah nilai harga yang ditampilkan? Mengapa?
-Variabel global
+
+#### Variabel global
+
 ```php
 // Define a function
 function diskon1(){
@@ -79,7 +87,9 @@ echo 'harga = '.$harga.'<br />';
 ```
 
 Berapa harga yang ditampilkan? Mengapa?
-Variabel statik
+
+#### Variabel statik
+
 ```php
 // Define the function
 function diskon2(){
@@ -104,12 +114,13 @@ echo 'harga = '.$harga.'<br />';
 
 Berapa harga yang ditampilkan? Mengapa?
 
-Variabel super global
+#### Variabel super global
+
 ```php
 echo htmlentities($_SERVER["PHP_SELF"]);
 ```
 
-Konstanta
+#### Konstanta
 
 ```php
 define("PWI", "Permograman Web dan Internet ");
@@ -125,7 +136,8 @@ echo 'File yang sedang diproses "'.__FILE__.' pada baris "'.__LINE__ .'"<br />';
 
 ## 3.3. Praktikum 3 : Conditional
 
-Single `if-else`
+#### Single `if-else`
+
 ```php
 $lulus = TRUE;
 if ($lulus){
@@ -135,7 +147,8 @@ if ($lulus){
 }
 ```
 
-Multiple `if-else`
+#### Multiple `if-else`
+
 ```php
 $nilai = 60;
 if ($nilai >= 80 && $nilai <= 100){
@@ -184,7 +197,7 @@ beberapa nilai seperti sebelumnya. Bagaimana hasilnya?
 
 ## 3.4. Praktikum 3 : Looping
 
-`for` Loop
+#### `for` Loop
 ```php
 $harga = 1000;
 echo '<table border="1">';
@@ -286,7 +299,7 @@ function faktorial($n) {
 ```
 
 Simpan kelima fungsi tersebut dalam sebuah file bernama fungsi.php.
-Buat sebuah file baru bernama panggil_fungsi.php untuk melakukan pemanggilan fungsi
+Buat sebuah file baru bernama `panggil_fungsi.php` untuk melakukan pemanggilan fungsi
 tersebut dan isikan kode program seperti berikut:
 
 ```php
@@ -305,7 +318,7 @@ print(faktorial(4));
 
 ## 3.6. Praktikum 3 : Array
 
-Numeric array
+#### Numeric array
 
 ```php
 //assignment melalui array identifier
@@ -329,7 +342,8 @@ if (is_array($diskon)) {
 
 Coba urutkan array di atas menggunakan fungsi pengurutan `sort()`, `asort()` dan `ksort()`. Bagaimana perbedaaanya?
 
-Assosiative array
+#### Assosiative array
+
 ```php
 //assignment menggunakan fungsi array
 $bulan = array(

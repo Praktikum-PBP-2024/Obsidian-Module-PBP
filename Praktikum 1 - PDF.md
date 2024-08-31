@@ -1,4 +1,5 @@
 # CLIENT SIDE SCRIPTING: JAVASCRIPT
+
 # 1. Tujuan Praktikum
 
 Setelah mengikuti praktikum ini mahasiswa diharapkan dapat melakukan client-side scripting pada halaman web menggunakan JavaScript.
@@ -6,6 +7,7 @@ Setelah mengikuti praktikum ini mahasiswa diharapkan dapat melakukan client-side
 
 Tools yang dibutuhkan untuk melakukan praktikum ini adalah web browser dan text editor(Notepad++).
 # 3. Langkah - Langkah Praktikum
+
 ## 3.1. JavaScript Basic
 
 Menuliskan teks `Hello world` ke layar menggunakan [`document.write`](https://developer.mozilla.org/en-US/docs/Web/API/Document/write) 
@@ -558,6 +560,7 @@ Menggunakan method [`checkValidity()`](https://developer.mozilla.org/en-US/docs/
 Buatlah form input tambah produk seperti gambar berikut:
 
 ![[tugas1_rip.png]]
+
 Aturan validasi untuk form tersebut adalah sebagai berikut:
 
 | Field            | Aturan validasi                                                                                                                                                                                                                                                                                                                                     |

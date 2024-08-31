@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Side Quests.md",
+                "file": "Seputar Praktikum/Side Quests.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Perizinan.md",
+                "file": "Canvas Item/VM Praktikan.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Praktikum 2 - PDF.md",
+                "file": "Canvas Item/VM Praktikan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Praktikum 2 - PDF.md",
+                "file": "Canvas Item/VM Praktikan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Praktikum 2 - PDF.md"
+                "file": "Canvas Item/VM Praktikan.md"
               }
             }
           }
@@ -215,26 +215,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03d530aceb227230",
+  "active": "6e5990beca8c1fb2",
   "lastOpenFiles": [
-    "Perizinan.md",
+    "index.md",
+    "Seputar Praktikum/Link penting.md",
+    "Seputar Praktikum",
+    "Seputar Praktikum/Perizinan.md",
+    "Praktikum 2 - PDF.md",
     "Sistem.canvas",
-    "Side Quests.md",
-    "Rules tambahan untuk Lab D2.md",
+    "Seputar Praktikum/Side Quests.md",
+    "Seputar Praktikum/Rules tambahan untuk Lab D2.md",
     "Praktikum 5 - PDF.md",
     "Praktikum 4 - PDF.md",
     "Praktikum 3 - PDF.md",
-    "Praktikum 2 - PDF.md",
     "Praktikum 1 - PDF.md",
     "Pasted image 20240831133312.png",
-    "index.md",
-    "Informasi Asprak.md",
-    "Link penting.md",
-    "Pengumpulan Tugas.md",
-    "Penilaian.md",
+    "Seputar Praktikum/Informasi Asprak.md",
+    "Seputar Praktikum/Pengumpulan Tugas.md",
+    "Seputar Praktikum/Penilaian.md",
     "Canvas Item/VM Praktikan.md",
     "Untitled 1",
-    "Untitled",
     "Attachments/tugas1_rip.png",
     "Welcome.md",
     "Attachments/Sistem.png",

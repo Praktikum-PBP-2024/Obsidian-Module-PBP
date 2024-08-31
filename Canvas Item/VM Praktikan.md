@@ -35,8 +35,8 @@ ssh atmin@24060121130063.shariyl.cloud -p 22063
 
 untuk mengakses web server cukup mengakses
 
-http://nim.shariyl.cloud
+https://nim.shariyl.cloud
 
 atau jika menggunakan contoh
 
-http://24060121130063.shariyl.cloud
+https://24060121130063.shariyl.cloud

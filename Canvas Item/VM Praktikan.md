@@ -18,8 +18,8 @@ contoh nim mahasiswa: $24060121130\underline{063}$
 
 Pertama Ambil 3 digit terakhir, untuk contoh diatas: $063$, kita akan sebut ini sebagai $n$
 
-Lalu lakukan kalkulasi sederhana dengan menambahkan $n$ dengan $2200$
-$$\text{port} = 2200 + n = 22063$$
+Lalu lakukan kalkulasi sederhana dengan menambahkan $n$ dengan $22000$
+$$\text{port} = 22000 + n = 22063$$
 
 untuk mengakses ssh akses dengan command ssh seperti ini
 

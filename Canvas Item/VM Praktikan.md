@@ -10,7 +10,7 @@ VM Spec yang diberikan:
 | ------- | ------ |
 | CPU     | 4 Vcpu |
 | RAM     | 2 GiB  |
-| Storage | 8 GiB  |
+| Storage | 10 GiB |
 
 Untuk mengakses vm dilakukan dengan cara ini:
 
@@ -24,13 +24,13 @@ $$\text{port} = 2200 + n = 22063$$
 untuk mengakses ssh akses dengan command ssh seperti ini
 
 ```sh
-ssh nim@nim.shariyl.cloud -p port
+ssh atmin@nim.shariyl.cloud -p port
 ```
 
 atau jika menggunakan contoh diatas
 
 ```sh
-ssh 24060121130063@24060121130063.shariyl.cloud -p 22063
+ssh atmin@24060121130063.shariyl.cloud -p 22063
 ```
 
 untuk mengakses web server cukup mengakses

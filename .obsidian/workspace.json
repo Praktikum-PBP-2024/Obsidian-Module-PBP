@@ -6,6 +6,7 @@
       {
         "id": "61bf7e59d0dc17d3",
         "type": "tabs",
+        "dimension": 39.91646778042959,
         "children": [
           {
             "id": "30bb6bc021d6115c",
@@ -37,6 +38,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Praktikum 2 - PDF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "22ce3f7e6f91c0c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Side Quests.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e5990beca8c1fb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Praktikum 1 - PDF.md",
                 "mode": "source",
                 "source": false
@@ -44,7 +69,26 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
+      },
+      {
+        "id": "89b665d96aa66569",
+        "type": "tabs",
+        "dimension": 60.0835322195704,
+        "children": [
+          {
+            "id": "03d530aceb227230",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Praktikum 2 - PDF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Praktikum 1 - PDF.md",
+                "file": "Praktikum 2 - PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Praktikum 1 - PDF.md",
+                "file": "Praktikum 2 - PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Praktikum 1 - PDF.md"
+                "file": "Praktikum 2 - PDF.md"
               }
             }
           }
@@ -171,29 +215,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aabbbb1fb6d507c3",
+  "active": "03d530aceb227230",
   "lastOpenFiles": [
+    "Pasted image 20240831133312.png",
+    "Praktikum 1 - PDF.md",
+    "Rules tambahan untuk Lab D2.md",
+    "Praktikum 2 - PDF.md",
+    "Side Quests.md",
+    "Praktikum 5 - PDF.md",
+    "Praktikum 4 - PDF.md",
+    "index.md",
+    "Informasi Asprak.md",
+    "Link penting.md",
+    "Pengumpulan Tugas.md",
+    "Penilaian.md",
+    "Perizinan.md",
+    "Sistem.canvas",
+    "Praktikum 3 - PDF.md",
+    "Canvas Item/VM Praktikan.md",
+    "Untitled 1",
     "Untitled",
     "Attachments/tugas1_rip.png",
-    "Praktikum 1 - PDF.md",
-    "index.md",
-    "Sistem.canvas",
     "Welcome.md",
     "Attachments/Sistem.png",
     "Attachments",
     "New folder",
     "Canvas Item/Proxy.md",
-    "Canvas Item/VM Praktikan.md",
-    "Praktikum 5 - PDF.md",
     "Canvas Item/Kamu.md",
     "Canvas Item/VM - CICD.md",
     "Canvas Item/Untitled.md",
     "Canvas Item/Hypervisor.md",
     "Canvas Item/Github.md",
     "Canvas Item",
-    "Praktikum 2 - PDF.md",
-    "Praktikum 3 - PDF.md",
-    "Praktikum 4 - PDF.md",
     "Praktikum 1"
   ]
 }

@@ -1,4 +1,4 @@
-KONEKSI PHP DAN MYSQL
+# KONEKSI PHP DAN MYSQL
 
 1. Tujuan Praktikum
 Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:

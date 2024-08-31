@@ -1,3 +1,4 @@
+# CLIENT SIDE SCRIPTING: JAVASCRIPT
 # 1. Tujuan Praktikum
 
 Setelah mengikuti praktikum ini mahasiswa diharapkan dapat melakukan client-side scripting pada halaman web menggunakan JavaScript.

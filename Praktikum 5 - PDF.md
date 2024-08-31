@@ -1,4 +1,4 @@
-PHP dan AJAX
+# PHP dan AJAX
 
 1. Tujuan Praktikum
 Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:

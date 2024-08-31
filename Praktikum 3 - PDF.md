@@ -1,3 +1,5 @@
+# PEMROSESAN FORM
+
 1. Tujuan Praktikum
 Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:
 a. Membaca isi form dengan PHP menggunakan method GET maupun POST

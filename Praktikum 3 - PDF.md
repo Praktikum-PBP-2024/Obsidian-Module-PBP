@@ -26,59 +26,64 @@ Berikut adalah potongan source code yang digunakan untuk membuat form seperti ga
 
 ```php
 <div class="form-group">
-<label for "nama">Nama:</label>
-<input type-"text" class-"form-control" id-"nama" name="nama" maxlength="50">
+	<label for="nama">Nama:</label>
+	<input type="text" class-"form-control" id="nama" name="nama" maxlength="50">
 </div>
 <div class="form-group">
-<label for="email">Email:</label>
-<input type-"email" class-"form-control" id="email" name="email">
+	<label for="email">Email:</label>
+	<input type="email" class="form-control" id="email" name="email">
 </div>
 <div class="form-group">
-<label for="kota">Kota/ Kahupaten:</labe1>
-<select id="kota' name-"kota" class="form-control">
-<option value="Semarang">Semarang</option>
-<option value="Jakarta">Jakarta</option>
-<option value-"Bandung">Bandung</option>
-<option value="Surabaya">Surabaya</option>
-</select>
+	<label for="kota">Kota/ Kabupaten:</labe1>
+	<select id="kota" name="kota" class="form-control">
+		<option value="Semarang">Semarang</option>
+		<option value="Jakarta">Jakarta</option>
+		<option value="Bandung">Bandung</option>
+		<option value="Surabaya">Surabaya</option>
+	</select>
 </div>
-<label>Jenis Kelamin:</label>
-<div class-"form-check">
-<label class="form-check-label">
-<input type-"radio* class-"form-check-input" name="jenis_kelamin" value="pria">Pria
-</label>
+	<label>Jenis Kelamin:</label>
+	<div class="form-check">
+	<label class="form-check-label">
+		<input type="radio" class="form-check-input" name="jenis_kelamin" value="pria">
+		Pria
+	</label>
 </div>
 <div class="form-check">
-<label class="form-check-label">
-<input type="radio" class="form-check-input | name="jenis_kelamin" value="wanita"
-Wanita
-</label>
+	<label class="form-check-label">
+		<input type="radio" class="form-check-input" name="jenis_kelamin" value="wanita">
+		Wanita
+	</label>
 </div>
 <br>
 <labe1>Peminatan:</label>
 <div class="form-check">
-<label class="form-check-label">
-<input type-"checkbox" class-"form-check-input" name="minat[]" value="coding">Coding
-</label>
+	<label class="form-check-label">
+		<input type="checkbox" class="form-check-input" name="minat[]" value="coding">
+		Coding
+	</label>
 </div>
 <div class="form-check">
-<label class="form-check-label">
-<input type="checkbox" class="form-check-input" name="minat[]" value="ux design" UX
-</label>
+	<label class="form-check-label">
+		<input type="checkbox" class="form-check-input" name="minat[]" value="ux_design">
+		UX
+	</label>
 </div>
 <div class "form-check">
-<label class="form-check-label">
-<input type-"checkbox" class-"form-check-input" 'Iname="minat[]" value="data_science">
-Data Science
-</label>
+	<label class="form-check-label">
+		<input type="checkbox" class="form-check-input" name="minat[]" value="data_science">
+		Data Science
+	</label>
 </div>
 <br>
 <!-- submit, reset dan button -->
-<button type="submit" class="btn btn-primary" name="submit" " value="submit">Submit
+<button type="submit" class="btn" btn="primary" name="submit" value="submit">
+	Submit
 </button>
-<button type "reset" class="btn btn-danger">Reset</button>
-/form>
-Design
+<button type "reset" class="btn btn-danger">
+	Reset
+</button>
+</form>
 ```
 
 
@@ -86,18 +91,21 @@ Design
 
 ```php
 <?php
-if (isset($_GET["submit"]))(
-echo "<h3>Your Input:</h3>";
-echo 'Nama = '.S GET('nama'].'<br />';
-echo 'Email = '.$_GET['email'].'<br />';
-echo 'Kota = '.S_GET['kota'].'<br />';
-echo 'Jenis Kelamin = '.$ GET('jenis kelamin'].'<br />';
-echo 'Minat = 1.S GBT('minat'].'<br />';
-sminat = $_GET('minat'];
-if (!empty($minat)) (
-echo 'Peminatan yang dipilih: ';
-foreach($minat as Sminat_item) (
-echo o '<br />'.$minat_item;
+if (isset($_GET["submit"])){
+	echo "<h3>Your Input:</h3>";
+	echo 'Nama = '.$_GET('nama'].'<br />';
+	echo 'Email = '.$_GET['email'].'<br />';
+	echo 'Kota = '.$_GET['kota'].'<br />';
+	echo 'Jenis Kelamin = '.$_GET['jenis kelamin'].'<br />';
+	echo 'Minat = '.$_GET['minat'].'<br />';
+	$minat = $_GET['minat'];
+	if (!empty($minat)) {
+		echo 'Peminatan yang dipilih: ';
+		
+		foreach($minat as Sminat_item) {
+			echo '<br />'.$minat_item;
+		}
+	}
 ```
 
 3. Buatlah sebuah folder bernama form di folder htdocs, lalu simpan file tersebut di folder form dengan nama `user_form_get.php`.
@@ -116,17 +124,21 @@ echo o '<br />'.$minat_item;
 
 ```php
 <?php
-if (isset($_POST["submit"])))(
-echo "<h3>Your Input:</h3>";
-echo 'Nama = '.S POST('nama'].'<br />';
-echo 'Email = '.S POST('email'].'<br />';
-echo o 'Kota = '.S POST'kota'].'<br />';
-echo 'Jenis Kelamin = '.$_POST( 'jenis_kelamin'].'<br />';
-$minat = $_POST('minat'];
-if (!empty($minat)) (
-echo 'Peminatan yang dipilih: ';
-foreach(Sminat as Sminat item) (
-echo '<br />'.sminat_item;
+if (isset($_POST["submit"])){
+	echo "<h3>Your Input:</h3>";
+	echo 'Nama = '.$_POST('nama'].'<br />';
+	echo 'Email = '.$_POST['email'].'<br />';
+	echo 'Kota = '.$_POST['kota'].'<br />';
+	echo 'Jenis Kelamin = '.$_POST['jenis kelamin'].'<br />';
+	echo 'Minat = '.$_POST['minat'].'<br />';
+	$minat = $_POST['minat'];
+	if (!empty($minat)) {
+		echo 'Peminatan yang dipilih: ';
+		
+		foreach($minat as Sminat_item) {
+			echo '<br />'.$minat_item;
+		}
+	}
 ```
 
 3. Simpan file tersebut dengan nama baru, yaitu `user_form_post.php`.
@@ -185,12 +197,12 @@ function test input($data) {
 ```php
 <div class="form-group">
 	<label for="nama">Nama:<</label>
-	<input type-"text" class="form-control" id="nama" name="nama" maxlength="50">
+	<input type="text" class="form-control" id="nama" name="nama" maxlength="50">
 	<div class="error"><?php if(isset(Serror nama)) echo Serror nama;?>></div>)
 </div>
 <div class="form-group">
-	<label for-"email">Email:</label>
-	<input type-"email" class="form-control" id="email" name="email">
+	<label for="email">Email:</label>
+	<input type="email" class="form-control" id="email" name="email">
 	<div class="error"><?php if(isset(Serror email)) echo serror email;?>></div>
 </div>
 ```

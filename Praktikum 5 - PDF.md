@@ -12,11 +12,11 @@ Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:
 Tools yang dibutuhkan untuk melakukan praktikum ini adalah Apache web server, PHP interpreter, DBMS MySQL dan text editor.
 
 # 3. Langkah-Langkah Praktikum
-## 3.1. Praktikum 1 : Membuat objek XMLHttpRequest
+## 3.1. Membuat objek XMLHttpRequest
 Fungsi berikut digunakan untuk membuat objek XMLHttpRequest sebagai core Ajax. Buatlah fungsi tersebut dalam sebuah file dan simpan dengan nama ajax.js.
 
 `ajax.js`
-## 3.2. Praktikum 1 : Contoh AJAX sederhana
+## 3.2. Contoh AJAX sederhana
 Berikut ini merupakan contoh sederhana penggunaan Ajax untuk melakukan request ke server untuk
 menampilkan waktu server.
 1. File `show_server_time.php` berisi tombol 'Show Server Time'. Jika tombol tersebut diklik, maka akan memanggil fungsi javascript `get_server_time()` yang melakukan request ke file `get_server_time.php` melalui Ajax dan menampilkan responnya di elemen dengan `id="show_time"`.
@@ -35,7 +35,7 @@ lalu, include file `ajax.js` pada file `show_server_time.php`. Lokasi file `get_
 
 4. Panggil file `show_server_time.php` di browser,lalu klik tombol "Show Server Time", perhatikan bahwa waktu server akan ditampilkan pada halaman tersebut tanpa melakukan load keseluruhan isi halaman.
 
-## 3.3. Praktikum 1 : Contoh AJAX dengan method GET
+## 3.3. Contoh AJAX dengan method GET
 Berikut ini adalah contoh request ke server melalui Ajax menggunakan method GET untuk menyimpan data ke basis data.
 
 1. File add_customer.php berisi form data customer yang terdiri atas name, address, dan city. Tombol submit diganti dengan `<button type="button" ...>` yang jika diklik akan memanggil fungsi javascript `add_customer_get()`. Fungsi tersebut selanjutnya me-request file `add_customer_get.php` melalui Ajax dengan method GET dan menampilkan responnya pada elemen dengan `id="add_response"`.

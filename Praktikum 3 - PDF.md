@@ -27,7 +27,7 @@ Berikut adalah potongan source code yang digunakan untuk membuat form seperti ga
 ```php
 <div class="form-group">
 	<label for="nama">Nama:</label>
-	<input type="text" class-"form-control" id="nama" name="nama" maxlength="50">
+	<input type="text" class="form-control" id="nama" name="nama" maxlength="50">
 </div>
 <div class="form-group">
 	<label for="email">Email:</label>
@@ -154,34 +154,46 @@ Form pada file user_form_get.php maupun user_form_post.php belum ditambahkan pen
 ```php
 <body>
 <?php
-if (isset($_POST['submit'])))(
-//validasi nama: tidak boleh kosong, hanya dapat berisi huruf dan spasi
-Snama = test_input($ POST('nama']);
-if (empty ($nama) ) (
-Serror_nama = "Nama harus diisi";
-)elseif ((preg_natch("/^(a-zA-2 ]*$/",Snama)) (
-Serror_nama = "Nama hanya dapat berisi huruf dan spasi";
-//validasi email: tidak boleh kosong, format harus benar
-Semail = test_input($_POST('enail))));
-if (Semail == ' ) (
-Serror_email = "Email harus diisi";
-)elseif (!filter_var(Semail, FILTER VALIDATE EMAIL) (
-Serror email = "Format email tidak benar";
-//validasi alamat: tidak boleh kosong
-Salamat = test_input ($_POST('alamat'));
-if ($alamat == '') (
-Serror alamat = "Alamat harus diisi";
-//validasijonis kelamin: tidak boleh kosong
-if ($jenis_kelamin =- ' ) ) (
-Serror jenis kelamin = "Jenis kelamin harus diisi":
-//validasi kota: tidak boleh kosong
-$kota = $_POST['kota'];
-if (Skota = '' || Skota a = = 'kota') [
-Serror_kota = "Kota harus diisi";
-//validasi minat: tidak boleh kosong
-$minat= $_POST('minat'];
-if (empty(Sminat))(
-Serror minat = "Peminatan harus dipilih";
+if (isset($_POST['submit'])){
+	//validasi nama: tidak boleh kosong, hanya dapat berisi huruf dan spasi
+	$nama = test_input($ POST('nama']);
+	if (empty($nama)) {
+		$error_nama = "Nama harus diisi";
+	} else if ((preg_natch("/^(a-zA-2 ]*$/",$nama)) {
+		$error_nama = "Nama hanya dapat berisi huruf dan spasi";
+	}
+	
+	//validasi email: tidak boleh kosong, format harus benar
+	$email = test_input($_POST['email']);
+	if ($email == '') {
+		$error_email = "Email harus diisi";
+	} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) (
+		$error email = "Format email tidak benar";
+	}
+	
+	//validasi alamat: tidak boleh kosong
+	$alamat = test_input($_POST['alamat']);
+	if ($alamat == '') {
+		$error alamat = "Alamat harus diisi";
+	}
+	
+	//validasi jenis kelamin: tidak boleh kosong
+	$jenis_kelamin = test_input($_POST['jenis_kelamin']);
+	if ($jenis_kelamin == '' ) {
+		$error jenis kelamin = "Jenis kelamin harus diisi";
+	}
+	
+	//validasi kota: tidak boleh kosong
+	$kota = $_POST['kota'];
+	if ($kota = '' || $kota = 'kota') {
+		$error_kota = "Kota harus diisi";
+	}
+	
+	//validasi minat: tidak boleh kosong
+	$minat = $_POST('minat'];
+	if (empty($minat)){
+		$error_minat = "Peminatan harus dipilih";
+	}
 ```
 
 ```php
@@ -267,7 +279,7 @@ Field peminatan:
 <div class="form-check">
 <label class="form-check-label">
 <input type="checkbox" class-"form-check-input" name="minat[]" value="ux_design"
-<7php if (isset(Sminat) ss in array('ux design',$minat)) echo 'checked'; 2>>UX Design
+<?php if (isset(Sminat) ss in array('ux design',$minat)) echo 'checked'; ?>>UX Design
 </label>
 </div>
 pi untuk pilihan checkbox minat yang lainnya.

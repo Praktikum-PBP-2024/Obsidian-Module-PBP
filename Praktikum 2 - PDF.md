@@ -40,18 +40,21 @@ Bagian ini bertujuan untuk membuat program PHP yang pertama, yang akan menampilk
 Bagian ini bertujuan untuk mempelajari penggunaan variabel dan menampilkan nilai variabel, serta membedakan lingkup variabel, yaitu lokal, statik, global dan super global.
 
 ```php
+<?php
 //assign nilai ke variabel
 $a = 15;
-echo 'Variabel a berisi : '.$a.'<br />';
-
-$a = 'Pemrograman Web dan Internet';
-echo 'Variabel a berisi : '.$a.'<br />';
+echo "Variabel a berisi : $a <br />";
+ 
+$a = "Pemrograman Web dan Internet";
+echo "Variabel a berisi : $a <br />";
 ```
 
 #### Variabel lokal
 
 ```php
+<?php
 // Define a function
+
 function diskon(){
 	$harga = 1000;
 	$harga = 0.2 * $harga;
@@ -59,7 +62,7 @@ function diskon(){
 $harga = 2000;
 diskon();
 
-echo 'harga = '.$harga.'<br />';
+echo "harga = $harga<br />";
 ```
 
 Berapakah nilai harga yang ditampilkan? Mengapa?
@@ -67,6 +70,8 @@ Berapakah nilai harga yang ditampilkan? Mengapa?
 #### Variabel global
 
 ```php
+<?php
+
 // Define a function
 function diskon1(){
 	// Define harga as a global variable
@@ -91,6 +96,8 @@ Berapa harga yang ditampilkan? Mengapa?
 #### Variabel statik
 
 ```php
+<?php
+
 // Define the function
 function diskon2(){
 	// Define harga as a static variable
@@ -117,13 +124,22 @@ Berapa harga yang ditampilkan? Mengapa?
 #### Variabel super global
 
 ```php
+<?php
+
 echo htmlentities($_SERVER["PHP_SELF"]);
 ```
 
 #### Konstanta
 
 ```php
+<?php
+
+// php sudah tidak menyarankan ini
 define("PWI", "Permograman Web dan Internet ");
+
+// sebaiknya gunakan const
+// const PWI = "Permograman Web dan Internet ";
+
 echo 'Hari ini sedang praktikum '.PWI.'<br />';
 
 $constant_name = "PWI";
@@ -139,10 +155,12 @@ echo 'File yang sedang diproses "'.__FILE__.' pada baris "'.__LINE__ .'"<br />';
 #### Single `if-else`
 
 ```php
+<?php
+
 $lulus = TRUE;
-if ($lulus){
+if ($lulus) {
 	echo 'Selamat Anda Lulus. <br/>';
-}else{
+} else {
 	echo 'Maaf, Anda gagal. Silakan mencoba lagi. <br />';
 }
 ```
@@ -150,18 +168,20 @@ if ($lulus){
 #### Multiple `if-else`
 
 ```php
+<?php
+
 $nilai = 60;
-if ($nilai >= 80 && $nilai <= 100){
+if ($nilai >= 80 && $nilai <= 100) {
 	echo 'Nilai : A <br />';
-}elseif ($nilai >= 60 && $nilai < 80){
+} else if ($nilai >= 60 && $nilai < 80) {
 	echo 'Nilai : B <br />';
-}elseif ($nilai >= 40 && $nilai < 60){
+} else if ($nilai >= 40 && $nilai < 60) {
 	echo 'Nilai : C <br />';
-}elseif ($nilai >= 20 && $nilai < 40){
+} else if ($nilai >= 20 && $nilai < 40) {
 	echo 'Nilai : D <br />';
-}elseif ($nilai >= 0 && $nilai < 20){
+} else if ($nilai >= 0 && $nilai < 20) {
 	echo 'Nilai : E <br />';
-}else{
+} else {
 	echo 'Invalid nilai <br />';
 }
 ```
@@ -169,7 +189,9 @@ if ($nilai >= 80 && $nilai <= 100){
 Cobalah `$nilai` dengan beberapa nilai yang lain, misalkan $86$, $68$, $59$, $30$, $11$, $0$, $110$, $-98$, `"abc"`. Bagaimana hasilnya?
 
 ```php
-Switch
+<?php
+
+// Switch
 $nilai = 'AB';
 switch ($nilai) {
 	case "A":
@@ -199,6 +221,8 @@ beberapa nilai seperti sebelumnya. Bagaimana hasilnya?
 
 #### `for` Loop
 ```php
+<?php
+
 $harga = 1000;
 echo '<table border="1">';
 echo '<tr>
@@ -228,6 +252,8 @@ Buatlah kode program yang sama dengan kode program diatas menggunakan perulangan
 ## 3.5. Praktikum 3 : Function
 
 ```php
+<?php
+
 //contoh fungsi yang tidak mengembalikan nilai (disebut juga prosedur)
 function print_mhs($nama, $nim, $prodi){
 	echo 'Nama: '.$nama.'<br />';
@@ -235,13 +261,16 @@ function print_mhs($nama, $nim, $prodi){
 	echo 'Prodi: '.$prodi.'<br />';
 }
 print_mhs('Alfa','123456123','Ilmu Komputer/ Informatika');
+
 ```
 
 ```php
+<?php
+
 //menghitung harga setelah diskon
 //parameter input: harga dan diskon
-function hitung_diskon($harga,$diskon){
-	$harga = $harga - ($harga*$diskon/100);
+function hitung_diskon($harga, $diskon){
+	$harga = $harga - ($harga * $diskon / 100);
 	return $harga;
 }
 
@@ -254,10 +283,12 @@ echo 'Harga setelah diskon = '.$harga_diskon.'<br />';
 ```
 
 ```php
+<?php
+
 //menghitung harga setelah diskon
 //parameter input: harga dan diskon (nilai default=10)
-function hitung_diskon2($harga,$diskon=10){
-	$harga = $harga - ($harga*$diskon/100);
+function hitung_diskon2($harga, $diskon=10){
+	$harga = $harga - ($harga * $diskon / 100);
 	return $harga;
 }
 
@@ -269,10 +300,12 @@ echo 'Harga setelah diskon = '.$harga_diskon.'<br />';
 ```
 
 ```php
+<?php
+
 //menghitung harga setelah diskon
 //harga sebagai parameter input dan output
-function hitung_diskon3(&$harga,$diskon){
-	$harga = $harga - ($harga*$diskon/100);
+function hitung_diskon3(&$harga, $diskon){
+	$harga = $harga - ($harga * $diskon / 100);
 	return $harga;
 }
 
@@ -289,6 +322,8 @@ Amati perbedaan pada masing-masing fungsi tersebut!
 
 Contoh fungsi rekursif untuk menghitung nilai faktorial dari sebuah bilangan.
 ```php
+<?php
+
 function faktorial($n) {
 	if ($n == 0){
 		return 1;
@@ -303,16 +338,11 @@ Buat sebuah file baru bernama `panggil_fungsi.php` untuk melakukan pemanggilan f
 tersebut dan isikan kode program seperti berikut:
 
 ```php
-require_once("fungsi.php");
+<?php
 
-//pemanggilan fungsi hitung_diskon
-$harga = 10000;
-$diskon = 20;
-$harga_diskon = hitung_diskon($harga,$diskon);
-echo 'Harga sebelum diskon = '.$harga.'<br />';
-echo 'Harga setelah diskon = '.$harga_diskon.'<br />';
+require_once "fungsi.php";
 
-//pemanggilan fungsi faktorial
+// pemanggilan fungsi faktorial
 print(faktorial(4));
 ```
 
@@ -321,23 +351,27 @@ print(faktorial(4));
 #### Numeric array
 
 ```php
+<?php
+
 //assignment melalui array identifier
-for ($i=0;$i<10;$i++){
+for ($i = 0; $i < 10; $i++){
 	$diskon[] = $i * 5;
 }
 //assignment menggunakan fungsi array
 //$diskon = array(0, 10, 20, 30, 40, 50, 60, 70, 80, 90);
 
 //cek apakah sebuah variabel bertipe array
-if (is_array($diskon)) {
-	echo 'Array';
-	else
-	echo 'Not Array';
-	//menampilkan isi array
-	$n = sizeof($diskon);
-	for($i = 0; $i <= $n - 1; $i++){
-	echo 'Diskon hari ke-'.($i+1).' = '.$diskon[$i].' % <br />';
+if (is_array($diskon))
+	echo 'Array<br />';
+else 
+	echo 'Not Array<br />';
+
+//menampilkan isi array
+$n = sizeof($diskon);
+for($i = 0; $i <= $n - 1; $i++){
+    echo 'Diskon hari ke-'.($i+1).' = '.$diskon[$i].' % <br />';
 }
+
 ```
 
 Coba urutkan array di atas menggunakan fungsi pengurutan `sort()`, `asort()` dan `ksort()`. Bagaimana perbedaaanya?
@@ -345,6 +379,8 @@ Coba urutkan array di atas menggunakan fungsi pengurutan `sort()`, `asort()` dan
 #### Assosiative array
 
 ```php
+<?php
+
 //assignment menggunakan fungsi array
 $bulan = array(
     'jan' => 'Januari',
@@ -395,5 +431,5 @@ Sebelumnya, buatlah fungsi terpisah bernama fungsi `hitung_rata($array)` untuk m
 # TODO
 - [x] Content
 - [x] Second pass
-- [ ] Proof read
+- [x] Proof read
 - [ ] Appendix

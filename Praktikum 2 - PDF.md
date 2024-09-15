@@ -17,7 +17,7 @@ text editor.
 
 # 3. Langkah-Langkah Praktikum
 
-## 3.1. Praktikum 1 : Menampilkan teks PHP ke browser
+## 3.1. Menampilkan teks PHP ke browser
 
 Bagian ini bertujuan untuk membuat program PHP yang pertama, yang akan menampilkan text ke web browser. Tulislah program di bawah ini pada editor text dan simpanlah dengan nama `welcome.php` di direktori `C:\xampp\htdoc\pwi1`.
 
@@ -35,7 +35,7 @@ Bagian ini bertujuan untuk membuat program PHP yang pertama, yang akan menampilk
 </html>
 ```
 
-## 3.2. Praktikum 2: Variabel dan konstanta
+## 3.2. Variabel dan konstanta
 
 Bagian ini bertujuan untuk mempelajari penggunaan variabel dan menampilkan nilai variabel, serta membedakan lingkup variabel, yaitu lokal, statik, global dan super global.
 
@@ -150,7 +150,7 @@ echo 'Hari ini sedang praktikum '.constant($constant_name).'<br />';
 echo 'File yang sedang diproses "'.__FILE__.' pada baris "'.__LINE__ .'"<br />';
 ```
 
-## 3.3. Praktikum 3 : Conditional
+## 3.3. Conditional
 
 #### Single `if-else`
 
@@ -217,7 +217,7 @@ switch ($nilai) {
 Cobalah `$nilai` dengan beberapa nilai yang lain, misalkan `B`, `C`, `D`, `E`, `AB`. Bagaimana hasilnya? Hapus setiap statement ‘break’ pada kode program di atas dan cobalah isi `$nilai` dengan
 beberapa nilai seperti sebelumnya. Bagaimana hasilnya?
 
-## 3.4. Praktikum 3 : Looping
+## 3.4. Looping
 
 #### `for` Loop
 ```php
@@ -249,7 +249,7 @@ echo '</table>';
 Buatlah kode program yang sama dengan kode program diatas menggunakan perulangan
 `while` dan `do-while`.
 
-## 3.5. Praktikum 3 : Function
+## 3.5. Function
 
 ```php
 <?php
@@ -346,7 +346,7 @@ require_once "fungsi.php";
 print(faktorial(4));
 ```
 
-## 3.6. Praktikum 3 : Array
+## 3.6. Array
 
 #### Numeric array
 
@@ -424,7 +424,7 @@ Isi setiap elemen `array_mhs` berupa array yang terdiri atas kumpulan nilai untu
 Soal:
 Buatlah sebuah fungsi bernama `print_mhs($array_mhs)` untuk menampilkan data mahasiswa  yang ada pada array_mhs seperti berikut.
 
-![[Pasted image 20240831133312.png]]
+![[tugas2_rip.png]]
 
 Sebelumnya, buatlah fungsi terpisah bernama fungsi `hitung_rata($array)` untuk menghitung nilai rata-rata elemen array dan gunakan fungsi tersebut pada fungsi `print_mhs($array_mhs)`.
 

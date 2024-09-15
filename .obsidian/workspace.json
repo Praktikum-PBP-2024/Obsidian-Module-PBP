@@ -47,28 +47,36 @@
             "id": "22ce3f7e6f91c0c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Seputar Praktikum (Hanya untuk D2)/Side Quests.md",
-                "mode": "source",
-                "source": false
+                "file": "Attachments/pbp-code.png"
               }
             }
           },
           {
-            "id": "6e5990beca8c1fb2",
+            "id": "aee77ce16eec9df1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Attachments/pbp-prak.png"
+              }
+            }
+          },
+          {
+            "id": "dd0606678e547ca1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Praktikum 2 - PDF.md",
+                "file": "Praktikum 3 - PDF.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Praktikum 2 - PDF.md",
+                "file": "Praktikum 3 - PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Praktikum 2 - PDF.md",
+                "file": "Praktikum 3 - PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Praktikum 2 - PDF.md"
+                "file": "Praktikum 3 - PDF.md"
               }
             }
           }
@@ -195,29 +203,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6e5990beca8c1fb2",
+  "active": "dd0606678e547ca1",
   "lastOpenFiles": [
-    "Seputar Praktikum (Hanya untuk D2)/Side Quests.md",
+    "Praktikum 4 - PDF.md",
     "Praktikum 3 - PDF.md",
+    "Attachments/tugas_3_lowres.png",
+    "Attachments/Pasted image 20240911011217.png",
+    "Attachments/Pasted image 20240911010931.png",
+    "Pasted image 20240911010926.png",
     "Praktikum 2 - PDF.md",
     "Praktikum 1 - PDF.md",
-    "Praktikum 4 - PDF.md",
     "Praktikum 5 - PDF.md",
     "Seputar Praktikum (Hanya untuk D2)/Informasi Asprak.md",
     "Seputar Praktikum (Hanya untuk D2)/Link penting.md",
     "Seputar Praktikum (Hanya untuk D2)/Pengumpulan Tugas.md",
     "Seputar Praktikum (Hanya untuk D2)/Penilaian.md",
+    "Seputar Praktikum (Hanya untuk D2)/Recap.md",
+    "Attachments/pbp-code.png",
+    "Attachments/pbp-prak.png",
     "Seputar Praktikum (Hanya untuk D2)/Perizinan.md",
+    "Pasted image 20240907121218.png",
+    "Attachments/template_copy_docs.jpg",
     "Seputar Praktikum (Hanya untuk D2)/Rules tambahan untuk Lab D2.md",
-    "Canvas Item/VM Praktikan.md",
+    "Seputar Praktikum (Hanya untuk D2)/Side Quests.md",
+    "Attachments/fix ssh.jpg",
     "index.md",
-    "Seputar Praktikum (Hanya untuk D2)",
     "Sistem.canvas",
-    "Pasted image 20240831133312.png",
+    "Attachments/tugas2_rip.png",
+    "Canvas Item/VM Praktikan.md",
+    "Seputar Praktikum (Hanya untuk D2)",
     "Untitled 1",
-    "Attachments/tugas1_rip.png",
     "Welcome.md",
-    "Attachments/Sistem.png",
     "Attachments",
     "New folder",
     "Canvas Item/Proxy.md",

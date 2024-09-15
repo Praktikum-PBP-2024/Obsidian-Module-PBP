@@ -3,6 +3,7 @@
 # 1. Tujuan Praktikum
 
 Setelah mengikuti praktikum ini mahasiswa diharapkan dapat memahami cara untuk:
+
 1. Membaca isi form dengan PHP menggunakan method GET maupun POST
 2. Melakukan validasi input data dengan PHP
 3. Menampilkan isi kembali form
@@ -20,11 +21,13 @@ Tools yang dibutuhkan untuk melakukan praktikum ini adalah Apache web server, PH
 - Berikan nama pada setiap elemen input yang digunakan pada atribut name.
 - Elemen input yang masukannya berupa single value diberi nama berupa teks biasa, sedangkan yang masukannya dapat berupa multiple values diberi nama sebagai array.
 
+![[Pasted image 20240911010931.png]]
 Berikut adalah potongan source code yang digunakan untuk membuat form seperti gambar di atas. 
 
 `user_form_get.php`
 
 ```php
+<form action="" method="GET" class="">
 <div class="form-group">
 	<label for="nama">Nama:</label>
 	<input type="text" class="form-control" id="nama" name="nama" maxlength="50">
@@ -45,44 +48,35 @@ Berikut adalah potongan source code yang digunakan untuk membuat form seperti ga
 	<label>Jenis Kelamin:</label>
 	<div class="form-check">
 	<label class="form-check-label">
-		<input type="radio" class="form-check-input" name="jenis_kelamin" value="pria">
-		Pria
+		<input type="radio" class="form-check-input" name="jenis_kelamin" value="pria"> Pria
 	</label>
 </div>
 <div class="form-check">
 	<label class="form-check-label">
-		<input type="radio" class="form-check-input" name="jenis_kelamin" value="wanita">
-		Wanita
+		<input type="radio" class="form-check-input" name="jenis_kelamin" value="wanita"> Wanita
 	</label>
 </div>
 <br>
 <labe1>Peminatan:</label>
 <div class="form-check">
 	<label class="form-check-label">
-		<input type="checkbox" class="form-check-input" name="minat[]" value="coding">
-		Coding
+		<input type="checkbox" class="form-check-input" name="minat[]" value="coding"> Coding
 	</label>
 </div>
 <div class="form-check">
 	<label class="form-check-label">
-		<input type="checkbox" class="form-check-input" name="minat[]" value="ux_design">
-		UX
+		<input type="checkbox" class="form-check-input" name="minat[]" value="ux_design"> UX
 	</label>
 </div>
 <div class "form-check">
 	<label class="form-check-label">
-		<input type="checkbox" class="form-check-input" name="minat[]" value="data_science">
-		Data Science
+		<input type="checkbox" class="form-check-input" name="minat[]" value="data_science"> Data Science
 	</label>
 </div>
 <br>
 <!-- submit, reset dan button -->
-<button type="submit" class="btn" btn="primary" name="submit" value="submit">
-	Submit
-</button>
-<button type "reset" class="btn btn-danger">
-	Reset
-</button>
+<button type="submit" class="btn" btn="primary" name="submit" value="submit">Submit</button>
+<button type "reset" class="btn btn-danger">Reset</button>
 </form>
 ```
 
@@ -147,7 +141,9 @@ if (isset($_POST["submit"])){
 6. Manakah yang lebih baik, method GET atau POST? Uraikan jawaban Anda.
 
 ## 3.3. Validasi form dengan PHP
-Form pada file user_form_get.php maupun user_form_post.php belum ditambahkan penanganan validasi. Sebelumnya, tambahkan field alamat menggunakan elemen `<textarea>` setelah field email pada file `user_form_post.php`, sehingga tampilannya menjadi seperti berikut:
+Form pada file `user_form_get.php` maupun `user_form_post.php` belum ditambahkan penanganan validasi. Sebelumnya, tambahkan field alamat menggunakan elemen `<textarea>` setelah field email pada file `user_form_post.php`, sehingga tampilannya menjadi seperti berikut:
+
+![[Pasted image 20240911011217.png]]
 
 1. Tambahkan kode PHP berikut untuk menambahkan aturan validasi dan letakkan di bagian atas, sebelum kode untuk membuat form.
 
@@ -230,7 +226,7 @@ Field nama (perhatikan kode yang diblok warna abu-abu):
 ```php
 <div class "form-group">
 	<label for="nama">Nama:</label>
-	<input type="text" class="form-control" id="nama" name="nama" maxlength="50" value="<?php if(isset(Snama)) (echo Snama;) ?>">
+	<input type="text" class="form-control" id="nama" name="nama" maxlength="50" value="<?php if(isset($nama)) {echo $nama;} ?>">
 	<div class="error"> 
 		<?php if(isset($error_nama)) echo $error_nama; ?>
 	</div>
@@ -240,20 +236,18 @@ Field nama (perhatikan kode yang diblok warna abu-abu):
 Field alamat:
 ```php
 <div class="form-group">
-	<label for-"alamat">Alamat:</label>
-	<textarea class="form-control" id="alamat" rows="3" name-"alamat">
-	<?php if(isset(Salamat) (echo Salamat;) ?></textarea>
-	<div class-"error"X?php if(isset (Serror alamat)) echo Serror alamat;?></div>
+	<label for="alamat">Alamat:</label>
+	<textarea class="form-control" id="alamat" rows="3" name="alamat">
+	<?php if(isset(Salamat) {echo Salamat;} ?></textarea>
+	<div class="error"><?php if(isset($error alamat)) echo $error_alamat; ?></div>
 </div>
 ```
 
 Field kota:
 ```php
 <select id="kota" name-"kota" class="form-control">
-<option value-"Semarang" <?php if (isset(Skota) && Skota="Semarang") echo
-"selected="true" ; ?>>>Semarang</option>
-<option value="Jakarta" <?php if (isset(Skota) && $kota="Jakarta") echo
-"selected="true"'; ?>>Jakarta</option>
+	<option value-"Semarang" <?php if (isset($kota) && $kota="Semarang") echo 'selected="true"' ; ?>>Semarang</option>
+	<option value="Jakarta" <?php if (isset(Skota) && $kota="Jakarta") echo 'selected="true"'; ?>>Jakarta</option>
 ```
 
 Lengkapi untuk option yang lainnya.
@@ -263,7 +257,7 @@ Field jenis kelamin:
 ```php
 <div class="form-check">
 <label class="form-check-label">
-<input type-"radio" class="form-check-input" name="jenis_kelamin" value="pria"
+<input type="radio" class="form-check-input" name="jenis_kelamin" value="pria"
 	<?php 
 		if (isset($jenis_kelamin) && $jenis_kelamin=="pria") echo "checked"
 	?>
@@ -301,6 +295,7 @@ Simpan keempat file tersebut dalam folder form.
 
 Buatlah form seperti gambar berikut:
 
+![[tugas_3_lowres.png]]
 Aturan validasi:
 
 - Semua field harus diisi. 
@@ -310,6 +305,6 @@ Aturan validasi:
 
 # TODO
 - [x] Content
-- [ ] Second pass
+- [x] Second pass
 - [ ] Proof read
 - [ ] Appendix

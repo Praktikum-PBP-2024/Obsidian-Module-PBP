@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Praktikum 3 - PDF.md",
+                "file": "Praktikum 4 - PDF.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Praktikum 3 - PDF.md",
+                "file": "Praktikum 4 - PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Praktikum 3 - PDF.md",
+                "file": "Praktikum 4 - PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Praktikum 3 - PDF.md"
+                "file": "Praktikum 4 - PDF.md"
               }
             }
           }
@@ -203,17 +203,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd0606678e547ca1",
+  "active": "aabbbb1fb6d507c3",
   "lastOpenFiles": [
-    "Praktikum 4 - PDF.md",
+    "Pasted image 20240918065933.png",
+    "Pasted image 20240918065521.png",
+    "Pasted image 20240918065217.png",
+    "Pasted image 20240918064726.png",
+    "Pasted image 20240918064703.png",
     "Praktikum 3 - PDF.md",
+    "Praktikum 4 - PDF.md",
+    "Praktikum 5 - PDF.md",
     "Attachments/tugas_3_lowres.png",
     "Attachments/Pasted image 20240911011217.png",
     "Attachments/Pasted image 20240911010931.png",
     "Pasted image 20240911010926.png",
     "Praktikum 2 - PDF.md",
     "Praktikum 1 - PDF.md",
-    "Praktikum 5 - PDF.md",
     "Seputar Praktikum (Hanya untuk D2)/Informasi Asprak.md",
     "Seputar Praktikum (Hanya untuk D2)/Link penting.md",
     "Seputar Praktikum (Hanya untuk D2)/Pengumpulan Tugas.md",
@@ -222,14 +227,10 @@
     "Attachments/pbp-code.png",
     "Attachments/pbp-prak.png",
     "Seputar Praktikum (Hanya untuk D2)/Perizinan.md",
-    "Pasted image 20240907121218.png",
-    "Attachments/template_copy_docs.jpg",
     "Seputar Praktikum (Hanya untuk D2)/Rules tambahan untuk Lab D2.md",
     "Seputar Praktikum (Hanya untuk D2)/Side Quests.md",
-    "Attachments/fix ssh.jpg",
     "index.md",
     "Sistem.canvas",
-    "Attachments/tugas2_rip.png",
     "Canvas Item/VM Praktikan.md",
     "Seputar Praktikum (Hanya untuk D2)",
     "Untitled 1",

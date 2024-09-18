@@ -245,8 +245,8 @@ Field alamat:
 
 Field kota:
 ```php
-<select id="kota" name-"kota" class="form-control">
-	<option value-"Semarang" <?php if (isset($kota) && $kota="Semarang") echo 'selected="true"' ; ?>>Semarang</option>
+<select id="kota" name="kota" class="form-control">
+	<option value="Semarang" <?php if (isset($kota) && $kota="Semarang") echo 'selected="true"' ; ?>>Semarang</option>
 	<option value="Jakarta" <?php if (isset(Skota) && $kota="Jakarta") echo 'selected="true"'; ?>>Jakarta</option>
 ```
 
@@ -272,8 +272,8 @@ Field peminatan:
 ```php
 <div class="form-check">
 <label class="form-check-label">
-<input type="checkbox" class-"form-check-input" name="minat[]" value="ux_design"
-<?php if (isset(Sminat) ss in array('ux design',$minat)) echo 'checked'; ?>>UX Design
+<input type="checkbox" class="form-check-input" name="minat[]" value="ux_design"
+<?php if (isset(Sminat) && in array('ux design',$minat)) echo 'checked'; ?>>UX Design
 </label>
 </div>
 pi untuk pilihan checkbox minat yang lainnya.
@@ -296,6 +296,7 @@ Simpan keempat file tersebut dalam folder form.
 Buatlah form seperti gambar berikut:
 
 ![[tugas_3_lowres.png]]
+
 Aturan validasi:
 
 - Semua field harus diisi. 

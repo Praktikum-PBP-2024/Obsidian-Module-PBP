@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"781597984f5dd5f7","type":"file","file":"Setelah UTS/Api/ApiClient.md","x":-1019,"y":-130,"width":559,"height":400},
+		{"id":"9c6c1c9b12774b20","type":"file","file":"Setelah UTS/Api/Api Service.md","x":-939,"y":-720,"width":400,"height":342},
+		{"id":"79911c7b142ff657","x":-2100,"y":-130,"width":400,"height":400,"type":"file","file":"Setelah UTS/MainActivity.md"},
+		{"id":"2273daebc7458463","x":-1480,"y":10,"width":250,"height":60,"type":"text","text":"Fetch Data dari API"}
+	],
+	"edges":[
+		{"id":"5e5cdb724f6f5281","fromNode":"781597984f5dd5f7","fromSide":"top","toNode":"9c6c1c9b12774b20","toSide":"bottom"},
+		{"id":"8a7834a52f5ca905","fromNode":"79911c7b142ff657","fromSide":"right","toNode":"781597984f5dd5f7","toSide":"left"}
+	]
+}

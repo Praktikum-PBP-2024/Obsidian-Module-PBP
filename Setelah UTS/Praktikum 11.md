@@ -28,9 +28,20 @@ Pengembangan aplikasi mobile lintas platform mengacu pada proses pembuatan aplik
 
 # Praktikum
 
+## Install Dependency
+
+Buka menu plugins dari File > Settings > Plugins
+
 ![[Pasted image 20241127023918.png]]
 
+![[Pasted image 20241127131322.png]]
 
+Atau menggunakan lambang gear di kanan > Plugins...
+![[Pasted image 20241127131405.png]]
+
+
+Kemudian install plugin **Kotlin Multiplatform**
+## Menyiapkan Template Project Cross Platform 
 ## Modifikasi 1
 
 `App.kt`
@@ -140,7 +151,7 @@ import cafe.adriel.voyager.navigator.Navigator
 @Composable  
 fun App() {  
     Navigator(  
-        screen = Login()  
+        screen = Login_2()  
     )  
 }
 ```

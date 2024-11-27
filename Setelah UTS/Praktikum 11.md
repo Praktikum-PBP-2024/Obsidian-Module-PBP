@@ -273,6 +273,7 @@ class Home() : Screen {
             Column (modifier = Modifier.fillMaxSize()) {  
                 Text("Welcome to Homepage")  
             }  
-        }    }  
+        }    
+    }  
 }
 ```
